@@ -4,12 +4,15 @@ import spor from '../media/spor_original.mp4'
 
 export const SliderInfo = [
     {
-        projects: spor
+        projects: spor,
+        names: "SWEET PLANS OF REVENGE"
     },
     {
-        projects: news
+        projects: news,
+        names: "INTERN PACKAGE"
     },
     {
-        projects: skate
+        projects: skate,
+        names:"SUNDAY SKATE SHOP"
     }
 ]

@@ -26,13 +26,14 @@ video {
 }
 
 .main-container {
+  display:grid;
+  place-items: center;
   background:rgba(0, 0, 0, .8);
   margin-top:3%;
   height:85%;
   width:85%;
   z-index: 1;
   overflow: hidden;
-  background:purple;
 }
 
 @media screen and (max-width: 1400px) {

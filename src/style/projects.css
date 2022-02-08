@@ -1,14 +1,15 @@
 .project-holder {
-
-
+    background:grey;
+    width:100%;
+    height:100%;
 }
 
 /*--- carousel style code */
 
 .slide-holder {
     width:100%;
-    height:100vh;
-    background:green !important;
+    height:100%;
+    background:red !important;
     display:flex;
     align-items: center;
     justify-content:center;
@@ -19,13 +20,30 @@
  display:flex;
  align-items: center;
  justify-content: center;
- width:100%;
- height:100%;
+ width:60%;
+ height:80%;
+ border:dashed;
+ overflow: hidden;
+}
+
+.slide-container {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    height:100%;
+}
+
+.video-names {
+    z-index: 5000;
+    color:white;
+    font-size:40px;
+    margin-bottom:10px;
+    cursor: pointer;
 }
 
 .video {
     position:sticky;
-    
     object-fit:cover;
     width:400px;
     height:400px;
@@ -34,7 +52,8 @@
 
 .arrow-right, .arrow-left {
     position: absolute;
-    top:50%;
+    top:45%;
+    
     z-index: 10;
     color:black;
     font-size: 50px;
@@ -52,7 +71,7 @@
 
 .arrow-right:hover, .arrow-left:hover {
     color:white;
-    transform:scale(110%)
+    transform:scale(105%)
 }
 
 .test {

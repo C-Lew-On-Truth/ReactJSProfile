@@ -32,7 +32,11 @@ const Slider = ({slides}) => {
             >
                 {
                     index === current && (
+
+<div className="slide-container">
+<h2 className="video-names">{slide.names}</h2>
 <video className="video" src={slide.projects} controls/>
+</div>
                     )
                 }
                 
