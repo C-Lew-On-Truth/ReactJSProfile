@@ -1,18 +1,19 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Slider from './Slider.jsx'
 import '../style/about-me.css';
+import '../style/projects.css';
+import { SliderInfo } from './SliderInfo.jsx';
 
-const test = {
-    color: "white",
-}
 
 function Projects() {
   return (
-    <div style={test}>
-   
-          
-Projects
+    <div className="project-holder">
+    
+      <div className="slide-holder">
+      <Slider slides={SliderInfo}/>
+      </div>
    </div>
   );
 }
