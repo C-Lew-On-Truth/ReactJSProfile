@@ -1,5 +1,4 @@
 .project-holder {
-    background:grey;
     width:100%;
     height:100%;
 }
@@ -9,7 +8,6 @@
 .slide-holder {
     width:100%;
     height:100%;
-    background:red !important;
     display:flex;
     align-items: center;
     justify-content:center;
@@ -22,7 +20,6 @@
  justify-content: center;
  width:60%;
  height:80%;
- border:dashed;
  overflow: hidden;
 }
 
@@ -53,9 +50,8 @@
 .arrow-right, .arrow-left {
     position: absolute;
     top:45%;
-    
     z-index: 10;
-    color:black;
+    color:white;
     font-size: 50px;
     cursor: pointer;
     user-select: none;
