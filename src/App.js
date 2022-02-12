@@ -17,7 +17,7 @@ class App extends React.Component {
                 experience: "Experience",
                 projects: "Projects",
                 contactMe: "Contact Me",
-                mainContent: <Projects/>
+                mainContent: <Experience/>
             }   
        }
 
