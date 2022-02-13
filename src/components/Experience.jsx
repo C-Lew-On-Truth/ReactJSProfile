@@ -14,39 +14,40 @@ const test = {
 function Experience() {
   return (
     <div className="expo-holder">
-      <h1>Experience</h1>
+      <h1 className="experience-head">Experience</h1>
    <div className="expo-flex">
 
    <div className="work">
-      <h2>Place of Business</h2>
+      <h2 className="business-head">Places of Business</h2>
       <div className="expo-flex-1">
 
-        <div class="companies">
-          <img class="icons" src={SeenThis}/>
+ 
+     <div class="companies">
+          <img className="icons" src={SeenThis}/>
           <h3>SeenThis</h3>
           <h4>Technical Producer</h4>
         </div>
-        <div class="companies">
-          <img class="icons" src={NY1}/>
+        <div className="companies">
+          <img className="icons" src={NY1}/>
           <h3>New York One</h3>
           <h4>Media Ingest Editor</h4>
         </div>
-        <div class="companies">
-          <img class="icons" src={Meredith}/>
+        <div className="companies">
+          <img className="icons" src={Meredith}/>
           <h3>Meredith</h3>
           <h4>Video Ingest Technician</h4>
         </div>
-        <div class="companies">
-          <img class="icons" src={Adobe}/>
+        <div className="companies">
+          <img className="icons" src={Adobe}/>
           <h3>Adobe</h3>
           <h4>Media Operations Coordinator</h4>
-
         </div>
+     
       </div>
     </div>
 
     <div className="skills">
-    <h2>Skills</h2>
+    <h2 className="skills-head">Skills</h2>
     <div className="expo-flex-2">
        
     </div>
@@ -54,7 +55,7 @@ function Experience() {
 
 
    </div>
-   <h1>Resume</h1>
+   <h1 className="resume">Resume</h1>
    </div>
   );
 }

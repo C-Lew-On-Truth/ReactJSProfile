@@ -1,26 +1,22 @@
 .expo-holder {
+    display:grid;
         place-items:center;
         width:100%;
         height:100%;
         font-family: sans-serif; 
     }
     
-    img {
-        width:100%;
-        height:auto;
-    }
-    
-    h1 {
+    .experience-head {
         color:white;
         text-align: center;
         z-index: 1;
-        margin-bottom:-30px;
+        margin-bottom:-10px;
     }
 
-    h2 {
+    .skills-head, .business-head {
         text-align: center;
-        margin-top:-1px;
-        margin-bottom:-30px;
+        margin-top: 15px;
+        margin-bottom:5px;
         z-index: 1;
     }
 
@@ -29,8 +25,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        height:100%;
-        width:100%;
+        height:70vh;
+        width:99%;
         overflow: hidden;
     }
 
@@ -41,23 +37,19 @@
         height:95%; 
     }
 
-    .expo-flex-1 {
-        margin-top:10%;
-    }
+   
 
     .work, .skills{
         display:flex;
         flex-direction:column;
         align-items:center;
-        justify-content: center;
         background:black;
-        border:6px white solid;
+        border:1px white solid;
         height:85%;
-        margin-bottom:10px;
     }
 
     .work {
-        width:  50%;
+        width:  55%;
     }
 
     .skills {
@@ -69,22 +61,38 @@
         z-index: 1;
     }
 
+    .company-holder {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:100%;
+        border:1px solid red;
+    }
+
     .companies {
         width:100%;
         display:grid;
         place-items: center;
         grid-template-columns: 20% 40% 40%;
-        border: 1px solid white;
     }
 
     .icons {
-        height:70px;
-        width:70px;
+        height:50px;
+        width:50px;
         border-radius:50%;
     }
 
     .companies h3 {
-        font-size:22px;
+        font-size:20px;
     }
  
+    .companies h4 {
+        font-size:16px;
+    }
+
+    .resume {
+        margin-top:-10px;
+        cursor: pointer;
+    }
 
