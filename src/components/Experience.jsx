@@ -7,10 +7,6 @@ import NY1 from "../media/ny1.jpg"
 import Meredith from "../media/meredith.jpg"
 import Adobe from "../media/adobe.jpg"
 
-const test = {
-    color: "white",
-}
-
 function Experience() {
   return (
     <div className="expo-holder">
@@ -22,7 +18,7 @@ function Experience() {
       <div className="expo-flex-1">
 
  
-     <div class="companies">
+     <div className="companies">
           <img className="icons" src={SeenThis}/>
           <h3>SeenThis</h3>
           <h4>Technical Producer</h4>

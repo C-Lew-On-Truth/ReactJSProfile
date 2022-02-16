@@ -17,7 +17,7 @@ class App extends React.Component {
                 experience: "Experience",
                 projects: "Projects",
                 contactMe: "Contact Me",
-                mainContent: <Experience/>
+                mainContent: <AboutMe/>
             }   
        }
 
@@ -25,7 +25,7 @@ class App extends React.Component {
                let target = event.target.textContent
                if(target === "About Me") {
                        this.setState({
-                               mainContent: <AboutMe/>,
+                               mainContent: <AboutMe/>
                        })
                } else if (target === "Experience") {
                 this.setState({
