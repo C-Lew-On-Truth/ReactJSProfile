@@ -70,7 +70,7 @@ mainGif() {
    render() {
       return (
          <div className="about-me-holder">
-           <h1>About Me</h1>
+           <h1 className="about-me-header">About Me</h1>
      
            <div className="entry-holder">
      
@@ -100,7 +100,7 @@ mainGif() {
                  <img className="gif" src={this.state.gif} />
                </div>
               
-              <div class="h-and-i">Hobbies and Interest</div>
+              <div className="h-and-i">Hobbies and Interest</div>
               <div className="interest" 
               onMouseOver={this.imageChange}
               onMouseLeave={this.mainGif}
