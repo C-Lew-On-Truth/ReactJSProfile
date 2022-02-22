@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/ReactJSProfile/static/css/main.420c3b89.css",
+    "main.js": "/ReactJSProfile/static/js/main.4318d927.js",
+    "static/media/sunday_skate_video.mp4": "/ReactJSProfile/static/media/sunday_skate_video.86b584dc4dac2e6347e6.mp4",
+    "static/media/slow_clouds.mp4": "/ReactJSProfile/static/media/slow_clouds.31227fe4df0d9fbb3963.mp4",
+    "static/media/spor_original.mp4": "/ReactJSProfile/static/media/spor_original.396b0a87cfa3c7391aef.mp4",
+    "static/media/wivb_pkg.mp4": "/ReactJSProfile/static/media/wivb_pkg.84e7111224a1696624c3.mp4",
+    "static/media/hockey.gif": "/ReactJSProfile/static/media/hockey.9608a9add30ff8d2c0da.gif",
+    "static/media/dribbling.gif": "/ReactJSProfile/static/media/dribbling.32ee15a92a69035eb522.gif",
+    "static/media/muppet.gif": "/ReactJSProfile/static/media/muppet.3e1ec10263cd77fac317.gif",
+    "static/media/skate-gif.gif": "/ReactJSProfile/static/media/skate-gif.c038952c82e6aaecf225.gif",
+    "static/media/kel-cooking.gif": "/ReactJSProfile/static/media/kel-cooking.abf454d86959b914864b.gif",
+    "static/media/hockey-giphy.gif": "/ReactJSProfile/static/media/hockey-giphy.9f01a0db98d6fe9813a0.gif",
+    "static/media/family.gif": "/ReactJSProfile/static/media/family.e9cd311d7984b98d53ca.gif",
+    "static/media/good-company.gif": "/ReactJSProfile/static/media/good-company.8d9788bac2169953aca9.gif",
+    "static/media/jimi-music.gif": "/ReactJSProfile/static/media/jimi-music.b1390ddc865c0c0ca36a.gif",
+    "static/media/peace.gif": "/ReactJSProfile/static/media/peace.db10d81fcd164832afd2.gif",
+    "static/media/coding.gif": "/ReactJSProfile/static/media/coding.abbea7614d048e6555c7.gif",
+    "static/media/meredith.jpg": "/ReactJSProfile/static/media/meredith.200a81fb51015647df31.jpg",
+    "static/media/ny1.jpg": "/ReactJSProfile/static/media/ny1.9ac0bc1eb31b52f1f751.jpg",
+    "index.html": "/ReactJSProfile/index.html",
+    "main.420c3b89.css.map": "/ReactJSProfile/static/css/main.420c3b89.css.map",
+    "main.4318d927.js.map": "/ReactJSProfile/static/js/main.4318d927.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.420c3b89.css",
+    "static/js/main.4318d927.js"
+  ]
+}
