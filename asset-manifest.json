@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ReactJSProfile/static/css/main.420c3b89.css",
+    "main.css": "/ReactJSProfile/static/css/main.af997c36.css",
     "main.js": "/ReactJSProfile/static/js/main.4318d927.js",
     "static/media/sunday_skate_video.mp4": "/ReactJSProfile/static/media/sunday_skate_video.86b584dc4dac2e6347e6.mp4",
     "static/media/slow_clouds.mp4": "/ReactJSProfile/static/media/slow_clouds.31227fe4df0d9fbb3963.mp4",
@@ -20,11 +20,11 @@
     "static/media/meredith.jpg": "/ReactJSProfile/static/media/meredith.200a81fb51015647df31.jpg",
     "static/media/ny1.jpg": "/ReactJSProfile/static/media/ny1.9ac0bc1eb31b52f1f751.jpg",
     "index.html": "/ReactJSProfile/index.html",
-    "main.420c3b89.css.map": "/ReactJSProfile/static/css/main.420c3b89.css.map",
+    "main.af997c36.css.map": "/ReactJSProfile/static/css/main.af997c36.css.map",
     "main.4318d927.js.map": "/ReactJSProfile/static/js/main.4318d927.js.map"
   },
   "entrypoints": [
-    "static/css/main.420c3b89.css",
+    "static/css/main.af997c36.css",
     "static/js/main.4318d927.js"
   ]
 }
