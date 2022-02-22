@@ -45,6 +45,7 @@ class App extends React.Component {
        }
 
         render() {
+                console.log(window.innerWidth)
                 return (
                         <div>
                                <div className="main">

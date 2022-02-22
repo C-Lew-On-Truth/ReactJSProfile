@@ -10,8 +10,7 @@
     z-index:1;
     margin:0;
     border:0;
-    
-    font-family:sans-serif;
+    font-family: Impact;
     font-size:22px;
     cursor:pointer
 }
@@ -28,4 +27,20 @@
 .links:hover {
     background:#946123;
     color:black
+}
+
+@media screen and (max-width: 500px) {
+    .nav-bar {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        top:0;
+        font-size:25px;
+        height:170px;
+    }
+
+    .links {
+        height:60px;
+    }
 }
