@@ -1,18 +1,13 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../style/about-me.css';
+import '../style/contact-me.css';
 
-const test = {
-    color: "white",
-}
 
 function ContactMe() {
   return (
-    <div style={test}>
-   
-          
-Contact Me
+    <div className="contact-me-holder">     
+      <h1>UNDER CONSTUCTION</h1>
    </div>
   );
 }

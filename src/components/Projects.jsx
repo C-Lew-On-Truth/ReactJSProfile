@@ -5,14 +5,14 @@ import Slider from './Slider.jsx'
 import '../style/about-me.css';
 import '../style/projects.css';
 import { SliderInfo } from './SliderInfo.jsx';
-
+// <Slider slides={SliderInfo}/>
 
 function Projects() {
   return (
     <div className="project-holder">
     
       <div className="slide-holder">
-      <Slider slides={SliderInfo}/>
+        <h1>UNDER CONSTRUCTION</h1>
       </div>
    </div>
   );
