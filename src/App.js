@@ -19,9 +19,15 @@ class App extends React.Component {
                 projects: "Projects",
                 contactMe: "Contact Me",
                 mainContent: <IntroPage/>
-            }   
+               }
+               this.regularContent = this.regularContent.bind(this)
        }
 
+       regularContent() {
+                setTimeout(() => {
+                        this.setState({mainContent:<AboutMe className="tranny"/>})
+                }, 4000)
+       }
        content(event) {
                let target = event.target.textContent
                if(target === "About Me") {
@@ -60,7 +66,7 @@ class App extends React.Component {
                                         />
                                         <video src={clouds} muted autoPlay loop/>
 
-                                        <div className="main-container">
+                                        <div className="main-container" onLoad={this.regularContent}>
                                              {this.state.mainContent}
                                         </div>
 

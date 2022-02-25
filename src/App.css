@@ -37,6 +37,10 @@ video {
   overflow: hidden;
 }
 
+.tranny {
+  transition: 2s;
+}
+
 @media screen and (max-width: 900px) {
   body { 
     overflow: visible;
