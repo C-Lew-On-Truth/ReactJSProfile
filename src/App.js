@@ -4,10 +4,11 @@ import "./App.css";
 import "./style/navbar.css";
 import clouds from "./media/slow_clouds.mp4";
 import NavBar from "./components/NavBar.jsx";
+import IntroPage from "./components/IntroPage.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 import Experience from "./components/Experience.jsx";
 import Projects from "./components/Projects.jsx";
-import ContactMe from './components/ContactMe.jsx';
+import ContactMe from "./components/ContactMe.jsx";
 
 class App extends React.Component {
        constructor(props) {
@@ -17,7 +18,7 @@ class App extends React.Component {
                 experience: "Experience",
                 projects: "Projects",
                 contactMe: "Contact Me",
-                mainContent: <ContactMe/>
+                mainContent: <IntroPage/>
             }   
        }
 

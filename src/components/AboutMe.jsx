@@ -90,7 +90,7 @@ mainGif() {
                  starting a career in Software Development and Informational
                  Technology! I thank you for taking the time to read my entry and
                  hope you enjoy my work because this web page has been conducted from
-                 scratch by yours truly ;)
+                 scratch by yours truly.
                </p>
              </div>
      
