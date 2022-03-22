@@ -23,8 +23,22 @@ class AboutMe extends React.Component {
      }
 this.imageChange = this.imageChange.bind(this)
 this.mainGif = this.mainGif.bind(this)
+this.aboutFade = React.createRef()
+this.showAbout = this.showAbout.bind(this)
   }
 
+
+  showAbout() {
+   let about = this.aboutFade.current
+   setTimeout(() => {
+       about.classList.add("fade-about")
+   }, 1000)
+}
+/*
+componentDidMount() {
+   this.showAbout()
+ }
+*/
 
 mainGif() {
    this.setState({gif:muppet})
@@ -69,7 +83,7 @@ mainGif() {
 
    render() {
       return (
-         <div className="about-me-holder">
+         <div className="about-me-holder" ref={this.aboutFade}>
            <h1 className="about-me-header">About Me</h1>
      
            <div className="entry-holder">

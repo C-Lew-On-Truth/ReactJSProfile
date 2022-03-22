@@ -14,26 +14,32 @@ class IntroPage extends React.Component {
            dovesAppear: false
        }
       this.image = React.createRef()
-       this.showElement = this.showElement.bind(this)
+       this.showDoves = this.showDoves.bind(this)
    }
 
-    showElement() {
+
+  
+ 
+    showDoves() {
         let imageGif = this.image.current
         setTimeout(() => {
-            console.log(imageGif)
             imageGif.classList.add("showDoves")
-        }, 2000)
+        }, 1000)
         setTimeout(() => {
-            
-            console.log(imageGif)
-        }, 4000)
+            imageGif.classList.add("dovesFade")
+        }, 2000)
     }
-  
+/*
+    componentDidMount() {
+        this.showDoves()
+      }
+*/
+
         render() {
          
             return(
                 <div className="dove-style">
-                    <div className="dove" ref={this.image} onLoad={this.showElement}>
+                    <div className="dove" ref={this.image}>
                         <img src={dove}/>
                     </div>
                 </div>

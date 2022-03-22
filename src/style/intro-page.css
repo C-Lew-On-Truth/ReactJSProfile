@@ -13,11 +13,16 @@ img {
 
 .dove {
     opacity:1;
-    transition:3s;
+    transition:1s;
 }
 
 .showDoves {
+    opacity:1; 
+    transition:.5s;
+}
+
+.dovesFade {
     opacity:0; 
-    transition:3s;
+    transition:.5s;
 }
 

@@ -6,9 +6,28 @@ import NY1 from "../media/ny1.jpg"
 import Meredith from "../media/meredith.jpg"
 import Adobe from "../media/adobe.jpg"
 
-function Experience() {
+class Experience extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.fadeExpo = React.createRef()
+    this.showExpo = this.showExpo.bind(this)
+  }
+/*
+  componentDidMount() {
+    this.showExpo()
+  }
+*/
+  showExpo() {
+    let expo = this.fadeExpo.current
+    setTimeout(() => {
+        expo.classList.add("fade-expo")
+    }, 1000)
+ }
+
+render() {
   return (
-    <div className="expo-holder">
+    <div className="expo-holder" ref={this.fadeExpo}>
       <h1 className="experience-head">Experience</h1>
    <div className="expo-flex">
 
@@ -49,6 +68,7 @@ function Experience() {
    <h1 className="resume">Resume</h1>
    </div>
   );
+}
 }
 
 export default Experience

@@ -35,11 +35,33 @@ video {
   width:85%;
   z-index: 1;
   overflow: hidden;
+  opacity:0;
+  transition:4s
 }
 
-.tranny {
-  transition: 2s;
+.main-fade {
+  animation-name: fades;
 }
+
+.inner-container {
+  width:100%;
+  height:100%;
+
+}
+
+.fade-in {
+  opacity:1;
+  transition: 3s;
+}
+.fade-out {
+  opacity:0;
+  transition: 3s;
+}
+
+.no-show {
+  opacity:0;
+}
+
 
 @media screen and (max-width: 900px) {
   body { 
@@ -49,12 +71,13 @@ video {
   .main {
     margin-top:6%;
     overflow: visible;
-    height:100%;
+    height:100vh;
   }
 
   .main-container {
     width:95%;
     overflow: visible;
+    margin-top:-2%;
   }
 }
 
@@ -62,5 +85,11 @@ video {
   .main {
     margin-top:38%;
     margin-bottom: 20%;
+    height:100vh;
+  }
+
+  video {
+    height:100vh;
+    object-fit: cover;
   }
 }
