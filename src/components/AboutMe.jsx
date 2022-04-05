@@ -34,11 +34,7 @@ this.showAbout = this.showAbout.bind(this)
        about.classList.add("fade-about")
    }, 1000)
 }
-/*
-componentDidMount() {
-   this.showAbout()
- }
-*/
+
 
 mainGif() {
    this.setState({gif:muppet})
@@ -84,13 +80,11 @@ mainGif() {
    render() {
       return (
          <div className="about-me-holder" ref={this.aboutFade}>
-           <h1 className="about-me-header">About Me</h1>
-     
            <div className="entry-holder">
      
              <div className="bio">
                <p>
-                 My name is Clayton Lewis and I'm a Tech Professional based out of
+                 My name is Clayton Lewis and I'm a Media Technologist based out of
                  Queens, New York. I've always considered myself to be an active
                  indvidual with many interest that are truly eclectic. I was born in
                  Upland, California, but have been blessed and fortunate to visit and
@@ -109,12 +103,14 @@ mainGif() {
              </div>
      
              <div className="interest-holder">
+
+             <h1 className="h-and-i">Hobbies and Interest</h1>
      
                <div className="gif-holder">
                  <img className="gif" src={this.state.gif} />
                </div>
               
-              <div className="h-and-i">Hobbies and Interest</div>
+              
               <div className="interest" 
               onMouseOver={this.imageChange}
               onMouseLeave={this.mainGif}

@@ -28,7 +28,6 @@ class Experience extends React.Component {
 render() {
   return (
     <div className="expo-holder" ref={this.fadeExpo}>
-      <h1 className="experience-head">Experience</h1>
    <div className="expo-flex">
 
    <div className="work">
