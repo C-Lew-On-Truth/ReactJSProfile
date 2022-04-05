@@ -17,51 +17,48 @@ class App extends React.Component {
       experience: "Experience",
       projects: "Projects",
       contactMe: "Contact Me",
-      mainContent: <IntroPage />,
+      mainContent: <AboutMe />,
+      contentHead: "About Me",
       contentChanged: false,
       menuClicked: false,
     };
     this.fades = React.createRef();
-    this.changing = this.changing.bind(this)
+    //this.changing = this.changing.bind(this)
   }
 
-changing() {
-       
-}
 
-componentDidMount() {
-           this.changing()
-}
+
 
 
   content(event) {
-          let fade = this.fades.current;
-          this.changing()
-          this.setState({menuClicked: true,})
-          console.log(fade)
           
     let target = event.target.textContent;
    
-    if (target === "About Me" && this.state.menuClicked) {
+    if (target === "About Me") {
       this.setState({
         mainContent: <AboutMe />,
+        contentHead: "About Me"
       });
       console.log('about clicked')
     } else if (target === "Experience") {
       this.setState({
         mainContent: <Experience />,
+        contentHead: "Experience"
       });
     } else if (target === "Projects") {
       this.setState({
         mainContent: <Projects />,
+        contentHead: "Projects"
       });
     } else if (target === "Contact Me") {
       this.setState({
         mainContent: <ContactMe />,
+        contentHead: "Contact Me"
       });
     } else {
       return;
     }
+    console.log(target)
   }
 
   render() {
@@ -78,7 +75,8 @@ componentDidMount() {
           />
           <video src={clouds} muted autoPlay loop />
 
-          <div className="main-container" ref={this.fades}>
+          <div className="main-container">
+            <h1 className="content-head">{this.state.contentHead}</h1>
             {this.state.mainContent}
           </div>
         </div>

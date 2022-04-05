@@ -28,19 +28,18 @@ video {
 }
 
 .main-container {
-  display:flex;
   background:rgba(0, 0, 0, .8);
   margin-top:4%;
   height:85%;
   width:85%;
   z-index: 1;
   overflow: hidden;
-  opacity:0;
-  transition:4s
 }
 
-.main-fade {
-  animation-name: fades;
+.content-head {
+  width:100%;
+  text-align: center;
+  margin-bottom:0
 }
 
 .inner-container {
@@ -49,47 +48,38 @@ video {
 
 }
 
-.fade-in {
-  opacity:1;
-  transition: 3s;
-}
-.fade-out {
-  opacity:0;
-  transition: 3s;
-}
-
-.no-show {
-  opacity:0;
-}
-
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   body { 
     overflow: visible;
   }
 
+  video {
+    height:160vh;
+  }
+
   .main {
-    margin-top:6%;
+    margin-top:1%;
     overflow: visible;
-    height:100vh;
+    height:150vh;
   }
 
   .main-container {
     width:95%;
     overflow: visible;
-    margin-top:-2%;
+    margin-top:5%;
+    height:120vh;
   }
 }
 
-@media screen and (max-width: 500px) {
-  .main {
-    margin-top:38%;
-    margin-bottom: 20%;
-    height:100vh;
+@media screen and (max-width: 680px) {
+  .main-container {
+    height:140vh;
   }
+}
 
-  video {
-    height:100vh;
-    object-fit: cover;
+@media screen and (max-width: 490px) {
+  .main-container {
+    margin-top:750px;
+    height:200vh;
   }
 }
