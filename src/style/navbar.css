@@ -38,6 +38,7 @@
         top:0;
         font-size:25px;
         height:170px;
+        z-index:2
     }
 
     .links {

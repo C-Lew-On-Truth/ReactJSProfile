@@ -12,7 +12,7 @@ img {
 }
 
 .entry-holder {
-    margin-top:-100px;
+    margin-top: -100px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -22,6 +22,7 @@ img {
 }
 
 .bio {
+    margin-top:100px;
     height: 100%;
     width: 50%;
 }
@@ -38,7 +39,6 @@ img {
     justify-content: center;
     width: 40%;
     height: auto;
-
 }
 
 .gif-holder {
@@ -83,6 +83,7 @@ img {
 @media screen and (max-width: 1180px) {
 
     .bio {
+        margin-top:0;
         width: 65%;
         padding-left: 15px;
     }
@@ -90,12 +91,19 @@ img {
 
 @media screen and (max-width: 1000px) {
     .entry-holder {
-        margin-top:-180px;
+        margin-top: -180px;
         flex-direction: column;
     }
 
     .bio {
         width: 90%;
+    }
+
+    .h-and-i {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 15%;
     }
 
     .interest-holder {
@@ -107,14 +115,6 @@ img {
         height: 60vh;
     }
 
-    .h-and-i {
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        margin-top:10px;
-        bottom: 10px;
-    }
-
     .interest h4 {
         margin-top: 0;
         margin-bottom: 0;
@@ -122,16 +122,36 @@ img {
 
     .gif-holder {
         display: block;
-        margin-top: 20px;
     }
 
+}
+
+@media screen and (max-width: 800px) {
+
+    .bio {
+        margin-bottom: 2%;
+    }
+
+    .h-and-i {
+        text-align: center;
+        bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 700px) {
 
     .entry-holder {
-        margin-top:0;
-        flex-direction: column;
+        height:100%;
+        overflow:hidden;
+    }
+
+    .bio {
+        margin-top: 100px;
+    }
+
+    .bio p {
+        font-size: 20px;
+        padding: 2%;
     }
 
     .interest-holder {
@@ -139,14 +159,24 @@ img {
     }
 
     .h-and-i {
-        position: relative;
+        position: static;
+        bottom: 4%;
     }
+
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 600px) {
 
-    .interest-holder {
-        margin-top: 40px;
+    .about-me-holder {
+        height:auto;
+    }
+    .entry-holder {
+        margin-top:0;
+        height:auto;
+    }
+
+    .bio {
+        margin-top: 0;
     }
 
     .interest {
@@ -154,16 +184,26 @@ img {
     }
 }
 
-@media screen and (max-width: 490px) {
+
+@media screen and (max-width: 500px) {
+
+    .about-me-holder {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height:100%;
+    }
     .entry-holder {
-        position: relative;
-        margin-top:10px;
-        flex-direction: column;
+        margin-top:0;
+        height:auto
     }
 
     .bio p {
         font-size: 18px;
-        padding: 0;
+        padding: 2%;
+    }
+
+    .interest-holder {
+        display:none
     }
 }
-
