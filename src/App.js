@@ -17,7 +17,7 @@ class App extends React.Component {
       experience: "Experience",
       projects: "Projects",
       contactMe: "Contact Me",
-      mainContent: <AboutMe />,
+      mainContent: <Experience />,
       contentHead: "About Me",
       contentChanged: false,
       menuClicked: false,
