@@ -1,104 +1,118 @@
 .expo-holder {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: impact;
+    opacity: 1;
+}
+
+
+.expo-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+    width: 99%;
+    overflow: hidden;
+}
+
+.work, .skills {
     display:grid;
-        place-items:center;
-        width:100%;
-        height:100%;
-        font-family: sans-serif; 
-        opacity:1;
-    }
+    place-items: center;
+    border: 1px white solid;
+    height: 85%;
+    background:purple;
+}
 
-    .fade-expo {
-        opacity:1;
-        transition:.5s
-    }
-    
-    .experience-head {
-        color:white;
-        text-align: center;
-        z-index: 1;
-        margin-bottom:-10px;
-    }
+.work {
+    width: 40%;
+}
 
-    .skills-head, .business-head {
-        text-align: center;
-        margin-top: 15px;
-        margin-bottom:5px;
-        z-index: 1;
-    }
+.skills {
+    width: 55%;
+}
 
-    .expo-flex {
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        height:70vh;
-        width:99%;
-        overflow: hidden;
-    }
+.skills-head, .business-head { 
+    text-align: center;
+    width:100%;
+    z-index: 1;
+}
 
-    .expo-flex-1, .expo-flex-2 {
-        display:grid;
-        place-items: center;
-        width:95%;
-        height:95%; 
-    }
+.expo-flex-1 {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background:blue;
+    height:auto;
+    margin-bottom:-10px
+}
 
-   
+.companies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-    .work, .skills{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        background:black;
-        border:1px white solid;
-        height:85%;
-    }
+.icons {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    transition: 1s;
+    cursor: pointer;
+    z-index: 2;
+}
 
-    .work {
-        width:  55%;
-    }
+.icons:hover {
+    transform: scale(105%);
+}
 
-    .skills {
-        width:40%;
-    }
+.companies h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
 
-    .bottom {
-        text-align: center;
-        z-index: 1;
-    }
+.companies h4 {
+    margin-top: 0;
+    font-size: 16px;
+    font-style: italic;
+}
 
-    .company-holder {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height:100%;
-        border:1px solid red;
-    }
+.resume {
+    width:100%;
+    background:red;
+    text-align: center;
+    cursor: pointer;
+}
 
-    .companies {
-        width:100%;
-        display:grid;
-        place-items: center;
-        grid-template-columns: 20% 40% 40%;
+@media screen and (max-width: 1200px) {
+  
+.skills-head, .business-head {
+    margin-top:-10px;
+}
+    .expo-flex-1 {
+       
+        margin-bottom:-50px;
     }
 
     .icons {
-        height:50px;
-        width:50px;
-        border-radius:50%;
+        width: 100px;
+        height:100px;
     }
 
-    .companies h3 {
-        font-size:20px;
-    }
- 
-    .companies h4 {
-        font-size:16px;
+}
+
+@media screen and (max-width: 1000px) {
+    .expo-flex {
+        flex-direction: column;
+        width:100%;
     }
 
-    .resume {
-        margin-top:-10px;
-        cursor: pointer;
+    .work, .skills {
+        width: 100%;
     }
-
+}

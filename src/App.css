@@ -103,13 +103,10 @@ video {
     margin-top: 200px;
     height: auto
   }
-
 }
 
 @media screen and (max-width: 400px) {
-
   .content-head {
     position:static;
   }
-
 }
