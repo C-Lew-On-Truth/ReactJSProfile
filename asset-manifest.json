@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.af997c36.css",
-    "main.js": "./static/js/main.13fb177a.js",
+    "main.css": "./static/css/main.031e6967.css",
+    "main.js": "./static/js/main.6b3288b3.js",
     "static/media/sunday_skate_video.mp4": "./static/media/sunday_skate_video.86b584dc4dac2e6347e6.mp4",
     "static/media/slow_clouds.mp4": "./static/media/slow_clouds.31227fe4df0d9fbb3963.mp4",
     "static/media/spor_original.mp4": "./static/media/spor_original.396b0a87cfa3c7391aef.mp4",
@@ -18,13 +18,14 @@
     "static/media/peace.gif": "./static/media/peace.db10d81fcd164832afd2.gif",
     "static/media/coding.gif": "./static/media/coding.abbea7614d048e6555c7.gif",
     "static/media/meredith.jpg": "./static/media/meredith.200a81fb51015647df31.jpg",
+    "static/media/dove.gif": "./static/media/dove.7c185fbf08098825f69c.gif",
     "static/media/ny1.jpg": "./static/media/ny1.9ac0bc1eb31b52f1f751.jpg",
     "index.html": "./index.html",
-    "main.af997c36.css.map": "./static/css/main.af997c36.css.map",
-    "main.13fb177a.js.map": "./static/js/main.13fb177a.js.map"
+    "main.031e6967.css.map": "./static/css/main.031e6967.css.map",
+    "main.6b3288b3.js.map": "./static/js/main.6b3288b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.af997c36.css",
-    "static/js/main.13fb177a.js"
+    "static/css/main.031e6967.css",
+    "static/js/main.6b3288b3.js"
   ]
 }
