@@ -25,7 +25,6 @@ video {
   justify-content: center;
   z-index: 2;
   overflow: hidden;
-  background: yellow;
 }
 
 .main-container {

@@ -29,6 +29,7 @@ class Experience extends React.Component {
       <div className="expo-holder">
 
         <div className="expo-flex">
+          
           <div className="work">
 
           <h2 className="business-head">Companies</h2>
