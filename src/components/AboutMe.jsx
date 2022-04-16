@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "../style/about-me.css";
 import muppet from "../media/muppet.gif";
 import hockey from "../media/hockey-giphy.gif";
