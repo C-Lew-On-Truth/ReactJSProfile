@@ -18,12 +18,11 @@ img {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 80%;
+    height: auto;
 }
 
 .bio {
-    margin-top:100px;
-    height: 100%;
+    height: auto;
     width: 50%;
 }
 
@@ -33,11 +32,18 @@ img {
 }
 
 .interest-holder {
+   width:40%;
+   display:grid;
+   place-items: center;
+}
+
+.interest-inner {
+    margin-top:0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 100%;
     height: auto;
 }
 
@@ -49,30 +55,32 @@ img {
 
 .gif {
     width: 300px;
-    height: 200px;
+    height: 250px;
     border-radius: 10px;
-    ;
 }
 
 .interest {
     display: grid;
     place-items: center;
     width: 100%;
-    height: 80%;
-    margin-top: 20px;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
     grid-template-columns: 50% 50%;
 }
 
 .h-and-i {
+    width:100%;
+    text-align: center;
+    position:static;
     font-size: 35px;
-    margin-top: 25px;
 }
 
 .interest h4 {
     text-align: center;
     cursor: pointer;
     font-size: 20px;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-bottom: -10px;
 }
 
@@ -83,7 +91,6 @@ img {
 @media screen and (max-width: 1180px) {
 
     .bio {
-        margin-top:0;
         width: 65%;
         padding-left: 15px;
     }
@@ -91,7 +98,6 @@ img {
 
 @media screen and (max-width: 1000px) {
     .entry-holder {
-        margin-top: -180px;
         flex-direction: column;
     }
 
@@ -99,20 +105,25 @@ img {
         width: 90%;
     }
 
-    .h-and-i {
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        bottom: 15%;
+    .bio p {
+        font-size: 20px;
+    }
+   
+    .interest-holder {
+     width:100%
     }
 
-    .interest-holder {
+    .h-and-i {
+        margin-top:0;
+        margin-bottom:0;
+    }
+
+    .interest-inner {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         width: 90%;
-        height: 60vh;
     }
 
     .interest h4 {
@@ -126,10 +137,16 @@ img {
 
 }
 
+@media screen and (max-width: 900px) {
+    .interest h4 {
+        margin: 10px;
+    }
+}
+
 @media screen and (max-width: 800px) {
 
     .bio {
-        margin-bottom: 2%;
+        width:100%;
     }
 
     .h-and-i {
@@ -140,27 +157,9 @@ img {
 
 @media screen and (max-width: 700px) {
 
-    .entry-holder {
-        height:100%;
-        overflow:hidden;
-    }
-
-    .bio {
-        margin-top: 100px;
-    }
-
     .bio p {
-        font-size: 20px;
+        font-size: 18px;
         padding: 2%;
-    }
-
-    .interest-holder {
-        flex-direction: column;
-    }
-
-    .h-and-i {
-        position: static;
-        bottom: 4%;
     }
 
 }
@@ -175,13 +174,14 @@ img {
         height:auto;
     }
 
-    .bio {
-        margin-top: 0;
+    .interest-holder {
+        display:none;
     }
 
     .interest {
-        width: 80%;
+        width: 100%;
     }
+  
 }
 
 
@@ -198,12 +198,4 @@ img {
         height:auto
     }
 
-    .bio p {
-        font-size: 18px;
-        padding: 2%;
-    }
-
-    .interest-holder {
-        display:none
-    }
 }
