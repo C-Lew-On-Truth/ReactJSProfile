@@ -27,13 +27,13 @@ class IntroPage extends React.Component {
         }, 1000)
         setTimeout(() => {
             imageGif.classList.add("dovesFade")
-        }, 2000)
+        }, 5000)
     }
-/*
+
     componentDidMount() {
         this.showDoves()
       }
-*/
+
 
         render() {
          

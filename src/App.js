@@ -8,6 +8,7 @@ import AboutMe from "./components/AboutMe.jsx";
 import Experience from "./components/Experience.jsx";
 import Projects from "./components/Projects.jsx";
 import ContactMe from "./components/ContactMe.jsx";
+import AboutMeNew from "./components/AboutMeNew.jsx";
 
 class App extends React.Component {
   constructor(props) {
@@ -17,52 +18,58 @@ class App extends React.Component {
       experience: "Experience",
       projects: "Projects",
       contactMe: "Contact Me",
-      mainContent: <Experience />,
-      contentHead: "Experience",
+      mainContent: <ContactMe />,
+      contentHead: "Contact Me",
       contentChanged: false,
       menuClicked: false,
     };
     this.fades = React.createRef();
+    this.nameFades = React.createRef();
+    this.navShow = React.createRef();
     //this.changing = this.changing.bind(this)
   }
 
+  fadin(event) {
+    let fader = this.fades.current;
+  }
 
-
-
+  navShow(event) {}
 
   content(event) {
-          
-    let target = event.target.textContent;
-   
-    if (target === "About Me") {
-      this.setState({
-        mainContent: <AboutMe />,
-        contentHead: "About Me"
-      });
-      console.log('about clicked')
-    } else if (target === "Experience") {
-      this.setState({
-        mainContent: <Experience />,
-        contentHead: "Experience"
-      });
-    } else if (target === "Projects") {
-      this.setState({
-        mainContent: <Projects />,
-        contentHead: "Projects"
-      });
-    } else if (target === "Contact Me") {
-      this.setState({
-        mainContent: <ContactMe />,
-        contentHead: "Contact Me"
-      });
-    } else {
-      return;
+    const target = event.target;
+
+    let colorOptions = event.currentTarget;
+
+    switch (target.textContent) {
+      case "About Me":
+        this.setState({
+          mainContent: <AboutMeNew />,
+          contentHead: "About Me",
+        });
+        break;
+      case "Experience":
+        this.setState({
+          mainContent: <Experience />,
+          contentHead: "Experience",
+        });
+        break;
+      case "Projects":
+        this.setState({
+          mainContent: <Projects />,
+          contentHead: "Projects",
+        });
+        break;
+      case "Contact Me":
+        this.setState({
+          mainContent: <ContactMe />,
+          contentHead: "Contact Me",
+        });
+        break;
     }
-    console.log(target)
   }
 
   render() {
-    console.log(window.innerWidth);
+    //console.log(window.innerWidth);
     return (
       <div>
         <div className="main">
@@ -75,8 +82,10 @@ class App extends React.Component {
           />
           <video src={clouds} muted autoPlay loop />
 
-          <div className="main-container">
-            <h1 className="content-head">{this.state.contentHead}</h1>
+          <div className="main-container" ref={this.fades}>
+            <h1 className="content-head" ref={this.nameFades}>
+              {this.state.contentHead}
+            </h1>
             {this.state.mainContent}
           </div>
         </div>

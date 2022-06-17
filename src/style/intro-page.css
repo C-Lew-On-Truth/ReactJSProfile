@@ -12,17 +12,16 @@ img {
 }
 
 .dove {
-    opacity:1;
+    opacity:0;
     transition:1s;
 }
 
 .showDoves {
-    opacity:1; 
-    transition:.5s;
+    transition:1s;
+    opacity:1
 }
 
 .dovesFade {
-    opacity:0; 
-    transition:.5s;
+    transition:1s;
+    opacity:0;
 }
-
